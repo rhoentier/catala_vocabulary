@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const client = new OpenAI({
-  baseURL: "https://api.iteragpt.iteratec.de/v1",
+  baseURL: process.env.LITELLM_BASE_URL || "no-base-url",
   apiKey: process.env.LITELLM_API_KEY || "no-key",
 });
 
