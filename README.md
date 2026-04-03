@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# Catala
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Druckbare Katalanisch-Deutsch Vokabelblätter im A4-Format. Vokabellisten werden per LLM generiert und als saubere, druckfertige Seiten dargestellt.
 
-Currently, two official plugins are available:
+## Voraussetzungen
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js >= 18
+- npm
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Entwicklung
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Öffnet die App unter `http://localhost:5173`. Die Seite zeigt ein A4-Blatt mit der gewählten Vokabelkategorie. Über den lila Button rechts lässt sich zwischen Kategorien wechseln.
+
+## Drucken
+
+Über den Browser drucken (`Strg+P` / `Cmd+P`). Das Menü wird beim Druck automatisch ausgeblendet -- es erscheint nur das Vokabelblatt der aktuell gewählten Kategorie.
+
+## Vokabeln generieren
+
+Neue Kategorien werden per LLM erzeugt. Dafür müssen die Umgebungsvariablen `LITELLM_API_KEY` und `LITELLM_MODEL` gesetzt sein (z.B. in einer `.env`-Datei).
+
+```bash
+npm run vocab -- "Küche"
+```
+
+Die generierte JSON-Datei landet in `data/vocabulary/` und wird automatisch in der App verfügbar.
+
+## Projektstruktur
+
+```
+src/
+  App.tsx              Hauptkomponente (A4-Layout, Kategorieauswahl)
+  App.css              Styling und Print-Regeln
+  components/
+    Nomen.tsx           Nomen-Darstellung (Singular/Plural)
+    Verb.tsx            Verb-Darstellung (Konjugationstabelle)
+data/
+  generate_vocabulary.ts   LLM-gestützte Vokabelgenerierung
+  vocabulary/              JSON-Dateien pro Kategorie
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+Die statische Ausgabe liegt in `dist/`.
