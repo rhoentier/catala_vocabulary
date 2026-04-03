@@ -1,0 +1,199 @@
+{
+  "category": "Küche",
+  "words": [
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la cuina",
+          "german": "die Küche"
+        },
+        "plural": {
+          "catalan": "les cuines",
+          "german": "die Küchen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el ganivet",
+          "german": "das Messer"
+        },
+        "plural": {
+          "catalan": "els ganivets",
+          "german": "die Messer"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo cuino",
+          "german": "ich koche"
+        },
+        "tu": {
+          "catalan": "tu cuines",
+          "german": "du kochst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella cuina",
+          "german": "er/sie kocht"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres cuinem",
+          "german": "wir kochen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres cuineu",
+          "german": "ihr kocht"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles cuinen",
+          "german": "sie kochen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "l'olla",
+          "german": "der Topf"
+        },
+        "plural": {
+          "catalan": "les olles",
+          "german": "die Töpfe"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo tallo",
+          "german": "ich schneide"
+        },
+        "tu": {
+          "catalan": "tu talles",
+          "german": "du schneidest"
+        },
+        "ellElla": {
+          "catalan": "ell/ella talla",
+          "german": "er/sie schneidet"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres tallem",
+          "german": "wir schneiden"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres talleu",
+          "german": "ihr schneidet"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles tallen",
+          "german": "sie schneiden"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la paella",
+          "german": "die Pfanne"
+        },
+        "plural": {
+          "catalan": "les paelles",
+          "german": "die Pfannen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el plat",
+          "german": "der Teller"
+        },
+        "plural": {
+          "catalan": "els plats",
+          "german": "die Teller"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo rento",
+          "german": "ich spüle"
+        },
+        "tu": {
+          "catalan": "tu rentes",
+          "german": "du spülst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella renta",
+          "german": "er/sie spült"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres rentem",
+          "german": "wir spülen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres renteu",
+          "german": "ihr spült"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles renten",
+          "german": "sie spülen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la nevera",
+          "german": "der Kühlschrank"
+        },
+        "plural": {
+          "catalan": "les neveres",
+          "german": "die Kühlschränke"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo bulleixo",
+          "german": "ich koche (Wasser)"
+        },
+        "tu": {
+          "catalan": "tu bulleixes",
+          "german": "du kochst (Wasser)"
+        },
+        "ellElla": {
+          "catalan": "ell/ella bulleix",
+          "german": "er/sie kocht (Wasser)"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres bullim",
+          "german": "wir kochen (Wasser)"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres bulliu",
+          "german": "ihr kocht (Wasser)"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles bulleixen",
+          "german": "sie kochen (Wasser)"
+        }
+      }
+    }
+  ]
+}

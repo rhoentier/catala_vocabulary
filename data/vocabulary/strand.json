@@ -1,0 +1,183 @@
+{
+  "category": "Strand",
+  "words": [
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la platja",
+          "german": "der Strand"
+        },
+        "plural": {
+          "catalan": "les platges",
+          "german": "die Strände"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la sorra",
+          "german": "der Sand"
+        },
+        "plural": {
+          "catalan": "les sorres",
+          "german": "die Sande"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo nedo",
+          "german": "ich schwimme"
+        },
+        "tu": {
+          "catalan": "tu nedes",
+          "german": "du schwimmst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella neda",
+          "german": "er/sie schwimmt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres nedem",
+          "german": "wir schwimmen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres nedeu",
+          "german": "ihr schwimmt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles neden",
+          "german": "sie schwimmen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "l'onada",
+          "german": "die Welle"
+        },
+        "plural": {
+          "catalan": "les onades",
+          "german": "die Wellen"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo prenc el sol",
+          "german": "ich sonne mich"
+        },
+        "tu": {
+          "catalan": "tu prens el sol",
+          "german": "du sonnst dich"
+        },
+        "ellElla": {
+          "catalan": "ell/ella pren el sol",
+          "german": "er/sie sonnt sich"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres prenem el sol",
+          "german": "wir sonnen uns"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres preneu el sol",
+          "german": "ihr sonnt euch"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles prenen el sol",
+          "german": "sie sonnen sich"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la tovallola",
+          "german": "das Handtuch"
+        },
+        "plural": {
+          "catalan": "les tovalloles",
+          "german": "die Handtücher"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la crema solar",
+          "german": "die Sonnencreme"
+        },
+        "plural": {
+          "catalan": "les cremes solars",
+          "german": "die Sonnencremes"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo bussejo",
+          "german": "ich tauche"
+        },
+        "tu": {
+          "catalan": "tu busseges",
+          "german": "du tauchst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella busseja",
+          "german": "er/sie taucht"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres bussegem",
+          "german": "wir tauchen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres bussegeu",
+          "german": "ihr taucht"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles bussegen",
+          "german": "sie tauchen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la petxina",
+          "german": "die Muschel"
+        },
+        "plural": {
+          "catalan": "les petxines",
+          "german": "die Muscheln"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el paraigua de sol",
+          "german": "der Sonnenschirm"
+        },
+        "plural": {
+          "catalan": "els paraigües de sol",
+          "german": "die Sonnenschirme"
+        }
+      }
+    }
+  ]
+}

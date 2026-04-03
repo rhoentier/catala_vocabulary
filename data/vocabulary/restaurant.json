@@ -1,0 +1,199 @@
+{
+  "category": "Restaurant",
+  "words": [
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el restaurant",
+          "german": "das Restaurant"
+        },
+        "plural": {
+          "catalan": "els restaurants",
+          "german": "die Restaurants"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el menú",
+          "german": "die Speisekarte"
+        },
+        "plural": {
+          "catalan": "els menús",
+          "german": "die Speisekarten"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo demano",
+          "german": "ich bestelle"
+        },
+        "tu": {
+          "catalan": "tu demanes",
+          "german": "du bestellst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella demana",
+          "german": "er/sie bestellt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres demanem",
+          "german": "wir bestellen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres demaneu",
+          "german": "ihr bestellt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles demanen",
+          "german": "sie bestellen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el cambrer",
+          "german": "der Kellner"
+        },
+        "plural": {
+          "catalan": "els cambrers",
+          "german": "die Kellner"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo menjo",
+          "german": "ich esse"
+        },
+        "tu": {
+          "catalan": "tu menges",
+          "german": "du isst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella menja",
+          "german": "er/sie isst"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres mengem",
+          "german": "wir essen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres mengeu",
+          "german": "ihr esst"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles mengen",
+          "german": "sie essen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el compte",
+          "german": "die Rechnung"
+        },
+        "plural": {
+          "catalan": "els comptes",
+          "german": "die Rechnungen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la taula",
+          "german": "der Tisch"
+        },
+        "plural": {
+          "catalan": "les taules",
+          "german": "die Tische"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo reservo",
+          "german": "ich reserviere"
+        },
+        "tu": {
+          "catalan": "tu reserves",
+          "german": "du reservierst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella reserva",
+          "german": "er/sie reserviert"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres reservem",
+          "german": "wir reservieren"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres reserveu",
+          "german": "ihr reserviert"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles reserven",
+          "german": "sie reservieren"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el plat",
+          "german": "das Gericht"
+        },
+        "plural": {
+          "catalan": "els plats",
+          "german": "die Gerichte"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo bec",
+          "german": "ich trinke"
+        },
+        "tu": {
+          "catalan": "tu beus",
+          "german": "du trinkst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella beu",
+          "german": "er/sie trinkt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres bevem",
+          "german": "wir trinken"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres beveu",
+          "german": "ihr trinkt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles beuen",
+          "german": "sie trinken"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "category": "Sich vorstellen",
+  "words": [
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el nom",
+          "german": "der Name"
+        },
+        "plural": {
+          "catalan": "els noms",
+          "german": "die Namen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el cognom",
+          "german": "der Nachname"
+        },
+        "plural": {
+          "catalan": "els cognoms",
+          "german": "die Nachnamen"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo em dic",
+          "german": "ich heiße"
+        },
+        "tu": {
+          "catalan": "tu et dius",
+          "german": "du heißt"
+        },
+        "ellElla": {
+          "catalan": "ell/ella es diu",
+          "german": "er/sie heißt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres ens diem",
+          "german": "wir heißen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres us dieu",
+          "german": "ihr heißt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles es diuen",
+          "german": "sie heißen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el país",
+          "german": "das Land"
+        },
+        "plural": {
+          "catalan": "els països",
+          "german": "die Länder"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo visc",
+          "german": "ich wohne"
+        },
+        "tu": {
+          "catalan": "tu vius",
+          "german": "du wohnst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella viu",
+          "german": "er/sie wohnt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres vivim",
+          "german": "wir wohnen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres viviu",
+          "german": "ihr wohnt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles viuen",
+          "german": "sie wohnen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "l'edat",
+          "german": "das Alter"
+        },
+        "plural": {
+          "catalan": "les edats",
+          "german": "die Alter"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la professió",
+          "german": "der Beruf"
+        },
+        "plural": {
+          "catalan": "les professions",
+          "german": "die Berufe"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo treballo",
+          "german": "ich arbeite"
+        },
+        "tu": {
+          "catalan": "tu treballes",
+          "german": "du arbeitest"
+        },
+        "ellElla": {
+          "catalan": "ell/ella treballa",
+          "german": "er/sie arbeitet"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres treballem",
+          "german": "wir arbeiten"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres treballeu",
+          "german": "ihr arbeitet"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles treballen",
+          "german": "sie arbeiten"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la llengua",
+          "german": "die Sprache"
+        },
+        "plural": {
+          "catalan": "les llengües",
+          "german": "die Sprachen"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo parlo",
+          "german": "ich spreche"
+        },
+        "tu": {
+          "catalan": "tu parles",
+          "german": "du sprichst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella parla",
+          "german": "er/sie spricht"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres parlem",
+          "german": "wir sprechen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres parleu",
+          "german": "ihr sprecht"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles parlen",
+          "german": "sie sprechen"
+        }
+      }
+    }
+  ]
+}

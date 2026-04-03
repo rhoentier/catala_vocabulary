@@ -1,0 +1,183 @@
+{
+  "category": "Einkaufen",
+  "words": [
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la botiga",
+          "german": "der Laden"
+        },
+        "plural": {
+          "catalan": "les botigues",
+          "german": "die Läden"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el preu",
+          "german": "der Preis"
+        },
+        "plural": {
+          "catalan": "els preus",
+          "german": "die Preise"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo compro",
+          "german": "ich kaufe"
+        },
+        "tu": {
+          "catalan": "tu compres",
+          "german": "du kaufst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella compra",
+          "german": "er/sie/es kauft"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres comprem",
+          "german": "wir kaufen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres compreu",
+          "german": "ihr kauft"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles compren",
+          "german": "sie kaufen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el producte",
+          "german": "das Produkt"
+        },
+        "plural": {
+          "catalan": "els productes",
+          "german": "die Produkte"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo pago",
+          "german": "ich bezahle"
+        },
+        "tu": {
+          "catalan": "tu pagues",
+          "german": "du bezahlst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella paga",
+          "german": "er/sie/es bezahlt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres paguem",
+          "german": "wir bezahlen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres pagueu",
+          "german": "ihr bezahlt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles paguen",
+          "german": "sie bezahlen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la caixa",
+          "german": "die Kasse"
+        },
+        "plural": {
+          "catalan": "les caixes",
+          "german": "die Kassen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la bossa",
+          "german": "die Tüte"
+        },
+        "plural": {
+          "catalan": "les bosses",
+          "german": "die Tüten"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo venc",
+          "german": "ich verkaufe"
+        },
+        "tu": {
+          "catalan": "tu vens",
+          "german": "du verkaufst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella ven",
+          "german": "er/sie/es verkauft"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres venem",
+          "german": "wir verkaufen"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres veneu",
+          "german": "ihr verkauft"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles venen",
+          "german": "sie verkaufen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "l'oferta",
+          "german": "das Angebot"
+        },
+        "plural": {
+          "catalan": "les ofertes",
+          "german": "die Angebote"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el descompte",
+          "german": "der Rabatt"
+        },
+        "plural": {
+          "catalan": "els descomptes",
+          "german": "die Rabatte"
+        }
+      }
+    }
+  ]
+}

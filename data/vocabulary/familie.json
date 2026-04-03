@@ -1,0 +1,183 @@
+{
+  "category": "Familie",
+  "words": [
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la mare",
+          "german": "die Mutter"
+        },
+        "plural": {
+          "catalan": "les mares",
+          "german": "die Mütter"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el pare",
+          "german": "der Vater"
+        },
+        "plural": {
+          "catalan": "els pares",
+          "german": "die Väter"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo estimo",
+          "german": "ich liebe"
+        },
+        "tu": {
+          "catalan": "tu estimes",
+          "german": "du liebst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella estima",
+          "german": "er/sie liebt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres estimem",
+          "german": "wir lieben"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres estimeu",
+          "german": "ihr liebt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles estimen",
+          "german": "sie lieben"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el fill",
+          "german": "der Sohn"
+        },
+        "plural": {
+          "catalan": "els fills",
+          "german": "die Söhne"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo cuido",
+          "german": "ich kümmere mich"
+        },
+        "tu": {
+          "catalan": "tu cuides",
+          "german": "du kümmerst dich"
+        },
+        "ellElla": {
+          "catalan": "ell/ella cuida",
+          "german": "er/sie kümmert sich"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres cuidem",
+          "german": "wir kümmern uns"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres cuideu",
+          "german": "ihr kümmert euch"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles cuiden",
+          "german": "sie kümmern sich"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la filla",
+          "german": "die Tochter"
+        },
+        "plural": {
+          "catalan": "les filles",
+          "german": "die Töchter"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el germà",
+          "german": "der Bruder"
+        },
+        "plural": {
+          "catalan": "els germans",
+          "german": "die Brüder"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo creixo",
+          "german": "ich wachse auf"
+        },
+        "tu": {
+          "catalan": "tu creixes",
+          "german": "du wächst auf"
+        },
+        "ellElla": {
+          "catalan": "ell/ella creix",
+          "german": "er/sie wächst auf"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres creixem",
+          "german": "wir wachsen auf"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres creixeu",
+          "german": "ihr wachst auf"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles creixen",
+          "german": "sie wachsen auf"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la germana",
+          "german": "die Schwester"
+        },
+        "plural": {
+          "catalan": "les germanes",
+          "german": "die Schwestern"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "l'avi",
+          "german": "der Großvater"
+        },
+        "plural": {
+          "catalan": "els avis",
+          "german": "die Großväter"
+        }
+      }
+    }
+  ]
+}
