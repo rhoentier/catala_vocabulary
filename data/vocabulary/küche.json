@@ -57,6 +57,26 @@
       }
     },
     {
+      "wordType": "adjective",
+      "translation": {
+        "catalan": "calent / calenta",
+        "german": "heiß"
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la paella",
+          "german": "die Pfanne"
+        },
+        "plural": {
+          "catalan": "les paelles",
+          "german": "die Pfannen"
+        }
+      }
+    },
+    {
       "wordType": "noun",
       "forms": {
         "singular": {
@@ -99,16 +119,10 @@
       }
     },
     {
-      "wordType": "noun",
-      "forms": {
-        "singular": {
-          "catalan": "la paella",
-          "german": "die Pfanne"
-        },
-        "plural": {
-          "catalan": "les paelles",
-          "german": "die Pfannen"
-        }
+      "wordType": "adjective",
+      "translation": {
+        "catalan": "fred / freda",
+        "german": "kalt"
       }
     },
     {
@@ -121,6 +135,232 @@
         "plural": {
           "catalan": "els plats",
           "german": "die Teller"
+        }
+      }
+    },
+    {
+      "wordType": "adverb",
+      "translation": {
+        "catalan": "lentament",
+        "german": "langsam"
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la cullera",
+          "german": "der Löffel"
+        },
+        "plural": {
+          "catalan": "les culleres",
+          "german": "die Löffel"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la forquilla",
+          "german": "die Gabel"
+        },
+        "plural": {
+          "catalan": "les forquilles",
+          "german": "die Gabeln"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo barrego",
+          "german": "ich rühre"
+        },
+        "tu": {
+          "catalan": "tu barreges",
+          "german": "du rührst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella barreja",
+          "german": "er/sie rührt"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres barregem",
+          "german": "wir rühren"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres barregeu",
+          "german": "ihr rührt"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles barregen",
+          "german": "sie rühren"
+        }
+      }
+    },
+    {
+      "wordType": "adjective",
+      "translation": {
+        "catalan": "net / neta",
+        "german": "sauber"
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el forn",
+          "german": "der Ofen"
+        },
+        "plural": {
+          "catalan": "els forns",
+          "german": "die Öfen"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la nevera",
+          "german": "der Kühlschrank"
+        },
+        "plural": {
+          "catalan": "les neveres",
+          "german": "die Kühlschränke"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo fregeixo",
+          "german": "ich brate"
+        },
+        "tu": {
+          "catalan": "tu fregeixes",
+          "german": "du brätst"
+        },
+        "ellElla": {
+          "catalan": "ell/ella fregeix",
+          "german": "er/sie brät"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres fregim",
+          "german": "wir braten"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres fregiu",
+          "german": "ihr bratet"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles fregeixen",
+          "german": "sie braten"
+        }
+      }
+    },
+    {
+      "wordType": "adjective",
+      "translation": {
+        "catalan": "brut / bruta",
+        "german": "schmutzig"
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el got",
+          "german": "das Glas"
+        },
+        "plural": {
+          "catalan": "els gots",
+          "german": "die Gläser"
+        }
+      }
+    },
+    {
+      "wordType": "preposition",
+      "translation": {
+        "catalan": "sobre",
+        "german": "auf"
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la recepta",
+          "german": "das Rezept"
+        },
+        "plural": {
+          "catalan": "les receptes",
+          "german": "die Rezepte"
+        }
+      }
+    },
+    {
+      "wordType": "verb",
+      "conjugations": {
+        "jo": {
+          "catalan": "jo bullo",
+          "german": "ich koche (Wasser)"
+        },
+        "tu": {
+          "catalan": "tu bulls",
+          "german": "du kochst (Wasser)"
+        },
+        "ellElla": {
+          "catalan": "ell/ella bull",
+          "german": "er/sie kocht (Wasser)"
+        },
+        "nosaltres": {
+          "catalan": "nosaltres bullim",
+          "german": "wir kochen (Wasser)"
+        },
+        "vosaltres": {
+          "catalan": "vosaltres bulliu",
+          "german": "ihr kocht (Wasser)"
+        },
+        "ellsElles": {
+          "catalan": "ells/elles bullen",
+          "german": "sie kochen (Wasser)"
+        }
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "la tassa",
+          "german": "die Tasse"
+        },
+        "plural": {
+          "catalan": "les tasses",
+          "german": "die Tassen"
+        }
+      }
+    },
+    {
+      "wordType": "adjective",
+      "translation": {
+        "catalan": "fresc / fresca",
+        "german": "frisch"
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "l'aixeta",
+          "german": "der Wasserhahn"
+        },
+        "plural": {
+          "catalan": "les aixetes",
+          "german": "die Wasserhähne"
         }
       }
     },
@@ -157,42 +397,40 @@
       "wordType": "noun",
       "forms": {
         "singular": {
-          "catalan": "la nevera",
-          "german": "der Kühlschrank"
+          "catalan": "el rentaplats",
+          "german": "die Spülmaschine"
         },
         "plural": {
-          "catalan": "les neveres",
-          "german": "die Kühlschränke"
+          "catalan": "els rentaplats",
+          "german": "die Spülmaschinen"
         }
       }
     },
     {
-      "wordType": "verb",
-      "conjugations": {
-        "jo": {
-          "catalan": "jo bulleixo",
-          "german": "ich koche (Wasser)"
+      "wordType": "conjunction",
+      "translation": {
+        "catalan": "mentre",
+        "german": "während"
+      }
+    },
+    {
+      "wordType": "noun",
+      "forms": {
+        "singular": {
+          "catalan": "el microones",
+          "german": "die Mikrowelle"
         },
-        "tu": {
-          "catalan": "tu bulleixes",
-          "german": "du kochst (Wasser)"
-        },
-        "ellElla": {
-          "catalan": "ell/ella bulleix",
-          "german": "er/sie kocht (Wasser)"
-        },
-        "nosaltres": {
-          "catalan": "nosaltres bullim",
-          "german": "wir kochen (Wasser)"
-        },
-        "vosaltres": {
-          "catalan": "vosaltres bulliu",
-          "german": "ihr kocht (Wasser)"
-        },
-        "ellsElles": {
-          "catalan": "ells/elles bulleixen",
-          "german": "sie kochen (Wasser)"
+        "plural": {
+          "catalan": "els microones",
+          "german": "die Mikrowellen"
         }
+      }
+    },
+    {
+      "wordType": "adjective",
+      "translation": {
+        "catalan": "deliciós / deliciosa",
+        "german": "lecker"
       }
     }
   ]

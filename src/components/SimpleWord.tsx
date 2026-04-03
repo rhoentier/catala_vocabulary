@@ -1,9 +1,9 @@
 import { Text, Flex, Divider } from "@mantine/core";
-import type { NounWord } from "../types";
+import type { SimpleWord } from "../types";
 
-export type { NounWord };
+export type { SimpleWord };
 
-export function NomenRow({ word }: { word: NounWord }) {
+export function SimpleWordRow({ word }: { word: SimpleWord }) {
   return (
     <Flex align="center" justify="center" style={{ height: "100%" }}>
       <Text
@@ -13,11 +13,7 @@ export function NomenRow({ word }: { word: NounWord }) {
         px={8}
         style={{ flex: 1 }}
       >
-        {word.forms.singular.catalan}
-        <Text span className="vocab-plural" c="dimmed">
-          {" "}
-          / {word.forms.plural.catalan}
-        </Text>
+        {word.translation.catalan}
       </Text>
       <Divider orientation="vertical" color="#ddd" my={6} />
       <Text
@@ -26,11 +22,7 @@ export function NomenRow({ word }: { word: NounWord }) {
         px={8}
         style={{ flex: 1 }}
       >
-        {word.forms.singular.german}
-        <Text span className="vocab-plural" c="dimmed">
-          {" "}
-          / {word.forms.plural.german}
-        </Text>
+        {word.translation.german}
       </Text>
     </Flex>
   );

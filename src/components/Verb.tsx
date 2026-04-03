@@ -1,23 +1,7 @@
 import { Table, Text, Flex } from "@mantine/core";
+import type { ConjugationForms, VerbWord } from "../types";
 
-interface Conjugation {
-  catalan: string;
-  german: string;
-}
-
-interface ConjugationForms {
-  jo: Conjugation;
-  tu: Conjugation;
-  ellElla: Conjugation;
-  nosaltres: Conjugation;
-  vosaltres: Conjugation;
-  ellsElles: Conjugation;
-}
-
-export interface VerbWord {
-  wordType: "verb";
-  conjugations: ConjugationForms;
-}
+export type { VerbWord };
 
 // Left column = singular, right column = plural
 const ROWS: [keyof ConjugationForms, keyof ConjugationForms][] = [

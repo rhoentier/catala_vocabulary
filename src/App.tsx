@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import {
   Paper,
   Stack,
@@ -11,15 +11,14 @@ import {
   Button,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { NomenRow, type NounWord } from "./components/Nomen";
-import { VerbBlock, type VerbWord } from "./components/Verb";
+import { List, FilePdf } from "@phosphor-icons/react";
+import { pdf } from "@react-pdf/renderer";
+import { NomenRow } from "./components/Nomen";
+import { VerbBlock } from "./components/Verb";
+import { SimpleWordRow } from "./components/SimpleWord";
+import { VocabularyPdf } from "./components/VocabularyPdf";
+import type { VocabularyData } from "./types";
 import "./App.css";
-
-type AnyWord = NounWord | VerbWord;
-interface VocabularyData {
-  category: string;
-  words: AnyWord[];
-}
 
 const vocabModules = import.meta.glob<VocabularyData>(
   "../data/vocabulary/*.json",
@@ -27,42 +26,50 @@ const vocabModules = import.meta.glob<VocabularyData>(
 );
 const allCategories = Object.values(vocabModules);
 
-// A4 at 96 dpi
-const A4_H = 1123;
-const A4_W = 794;
 const DESKTOP_BP = 800;
 
-function useA4Zoom() {
-  const calc = useCallback(() => {
-    if (window.innerWidth < DESKTOP_BP) return undefined;
-    const sh = (window.innerHeight * 0.9) / A4_H;
-    const sw = (window.innerWidth * 0.9) / A4_W;
-    return Math.min(sh, sw);
-  }, []);
-  const [zoom, setZoom] = useState(calc);
+function useIsDesktop() {
+  const [desktop, setDesktop] = useState(window.innerWidth >= DESKTOP_BP);
   useEffect(() => {
-    const update = () => setZoom(calc());
+    const update = () => setDesktop(window.innerWidth >= DESKTOP_BP);
     window.addEventListener("resize", update);
     return () => window.removeEventListener("resize", update);
-  }, [calc]);
-  return zoom;
+  }, []);
+  return desktop;
 }
 
 function App() {
-  const zoom = useA4Zoom();
+  const desktop = useIsDesktop();
   const [opened, { open, close }] = useDisclosure(false);
   const [current, setCurrent] = useState<VocabularyData>(allCategories[0]);
 
   const words = current.words;
+
+  const [generating, setGenerating] = useState(false);
 
   const selectCategory = (cat: VocabularyData) => {
     setCurrent(cat);
     close();
   };
 
+  const handleDownloadPdf = async () => {
+    setGenerating(true);
+    try {
+      const blob = await pdf(<VocabularyPdf data={current} />).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${current.category}.pdf`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } finally {
+      setGenerating(false);
+    }
+  };
+
   return (
     <div className="page-bg">
-      <div className="category-menu no-print">
+      <div className="category-menu">
         <ActionIcon
           variant="filled"
           color="#aa3bff"
@@ -71,21 +78,18 @@ function App() {
           onClick={open}
           aria-label="Kategorien"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
+          <List size={22} weight="bold" />
+        </ActionIcon>
+        <ActionIcon
+          variant="filled"
+          color="#aa3bff"
+          size="xl"
+          radius="xl"
+          onClick={handleDownloadPdf}
+          loading={generating}
+          aria-label="PDF herunterladen"
+        >
+          <FilePdf size={22} weight="bold" />
         </ActionIcon>
       </div>
 
@@ -94,7 +98,6 @@ function App() {
         onClose={close}
         title="Kategorie wählen"
         centered
-        className="no-print"
         styles={{
           title: { fontWeight: 700, fontSize: "1.1rem" },
         }}
@@ -117,9 +120,8 @@ function App() {
       {/* ── A4 paper ── */}
       <Paper
         className="a4"
-        shadow={zoom ? "lg" : undefined}
-        radius={zoom ? "md" : 0}
-        style={zoom ? { zoom } : undefined}
+        shadow={desktop ? "lg" : undefined}
+        radius={desktop ? "md" : 0}
       >
         <Stack
           gap={0}
@@ -128,8 +130,7 @@ function App() {
           pl={17}
           pb={39}
           style={{
-            height: zoom ? "100%" : "auto",
-            minHeight: zoom ? undefined : "100vh",
+            minHeight: desktop ? undefined : "100vh",
             boxSizing: "border-box",
           }}
         >
@@ -177,7 +178,9 @@ function App() {
                   <NomenRow word={word} />
                 ) : word.wordType === "verb" ? (
                   <VerbBlock word={word} />
-                ) : null;
+                ) : (
+                  <SimpleWordRow word={word} />
+                );
               return (
                 <Fragment key={i}>
                   <Grid.Col span={12} style={{ flex: 1, minHeight: 0 }}>

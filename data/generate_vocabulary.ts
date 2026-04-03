@@ -40,7 +40,34 @@ const VerbSchema = z.object({
   }),
 });
 
-const WordSchema = z.discriminatedUnion("wordType", [NomenSchema, VerbSchema]);
+const AdjectiveSchema = z.object({
+  wordType: z.literal("adjective"),
+  translation: FormSchema,
+});
+
+const AdverbSchema = z.object({
+  wordType: z.literal("adverb"),
+  translation: FormSchema,
+});
+
+const PrepositionSchema = z.object({
+  wordType: z.literal("preposition"),
+  translation: FormSchema,
+});
+
+const ConjunctionSchema = z.object({
+  wordType: z.literal("conjunction"),
+  translation: FormSchema,
+});
+
+const WordSchema = z.discriminatedUnion("wordType", [
+  NomenSchema,
+  VerbSchema,
+  AdjectiveSchema,
+  AdverbSchema,
+  PrepositionSchema,
+  ConjunctionSchema,
+]);
 
 const VocabularySchema = z.object({
   category: z.string(),
@@ -49,14 +76,14 @@ const VocabularySchema = z.object({
 
 type Vocabulary = z.infer<typeof VocabularySchema>;
 
-async function generateVocabulary(category: string): Promise<Vocabulary> {
+async function generateVocabulary(category: string, count: number): Promise<Vocabulary> {
   const response = await client.chat.completions.create({
     model: MODEL,
     messages: [
       {
         role: "user",
         content:
-          `Create a vocabulary list with the 10 most important words ` +
+          `Create a vocabulary list with the ${count} most important words ` +
           `for the category "${category}". ` +
           `Mix all word types! It shouldn’t just be one part of speech followed by another; instead, it should be, for example, two nouns, then a verb, then an adjective, and then another noun. It shouldn’t just be one part of speech followed by another; instead, it should be, for example, two nouns, then a verb, then an adjective, and then another noun.` +
           `Each word should be given in Catalan and German.`,
@@ -188,6 +215,70 @@ async function generateVocabulary(category: string): Promise<Vocabulary> {
                       },
                       required: ["wordType", "conjugations"],
                     },
+                    {
+                      type: "object",
+                      description: "An adjective with a simple translation",
+                      properties: {
+                        wordType: { type: "string", enum: ["adjective"] },
+                        translation: {
+                          type: "object",
+                          properties: {
+                            catalan: { type: "string" },
+                            german: { type: "string" },
+                          },
+                          required: ["catalan", "german"],
+                        },
+                      },
+                      required: ["wordType", "translation"],
+                    },
+                    {
+                      type: "object",
+                      description: "An adverb with a simple translation",
+                      properties: {
+                        wordType: { type: "string", enum: ["adverb"] },
+                        translation: {
+                          type: "object",
+                          properties: {
+                            catalan: { type: "string" },
+                            german: { type: "string" },
+                          },
+                          required: ["catalan", "german"],
+                        },
+                      },
+                      required: ["wordType", "translation"],
+                    },
+                    {
+                      type: "object",
+                      description: "A preposition with a simple translation",
+                      properties: {
+                        wordType: { type: "string", enum: ["preposition"] },
+                        translation: {
+                          type: "object",
+                          properties: {
+                            catalan: { type: "string" },
+                            german: { type: "string" },
+                          },
+                          required: ["catalan", "german"],
+                        },
+                      },
+                      required: ["wordType", "translation"],
+                    },
+                    {
+                      type: "object",
+                      description: "A conjunction with a simple translation",
+                      properties: {
+                        wordType: { type: "string", enum: ["conjunction"] },
+                        translation: {
+                          type: "object",
+                          properties: {
+                            catalan: { type: "string" },
+                            german: { type: "string" },
+                          },
+                          required: ["catalan", "german"],
+                        },
+                      },
+                      required: ["wordType", "translation"],
+                    },
                   ],
                 },
               },
@@ -210,18 +301,25 @@ async function generateVocabulary(category: string): Promise<Vocabulary> {
 
 async function main() {
   const category = process.argv[2];
+  const countArg = process.argv[3];
 
   if (!category) {
     console.error("Error: No category provided.");
     console.error("");
-    console.error("Usage:    tsx data/generate_vocabulary.ts <category>");
-    console.error("Example:  tsx data/generate_vocabulary.ts kitchen");
+    console.error("Usage:    tsx data/generate_vocabulary.ts <category> [count]");
+    console.error("Example:  tsx data/generate_vocabulary.ts kitchen 15");
     process.exit(1);
   }
 
-  console.log(`Generating vocabulary for: "${category}" ...`);
+  const count = countArg ? parseInt(countArg, 10) : 10;
+  if (isNaN(count) || count < 1) {
+    console.error("Error: count must be a positive integer.");
+    process.exit(1);
+  }
 
-  const vocabulary = await generateVocabulary(category);
+  console.log(`Generating ${count} vocabulary words for: "${category}" ...`);
+
+  const vocabulary = await generateVocabulary(category, count);
 
   const outputDir = path.join(__dirname, "vocabulary");
   if (!fs.existsSync(outputDir)) {

@@ -28,6 +28,9 @@
   right: 16px;
   top: 16px;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* Verb table: show mobile variant by default, desktop hidden */
@@ -51,7 +54,6 @@
 
   .a4 {
     width: 210mm;
-    height: 297mm;
     min-height: auto;
     flex-shrink: 0;
   }
@@ -80,40 +82,3 @@
   }
 }
 
-@media print {
-  @page {
-    size: A4;
-    margin: 0;
-  }
-
-  body {
-    margin: 0;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  .page-bg {
-    min-height: auto;
-    background: none;
-    display: block;
-  }
-
-  .a4 {
-    zoom: 1 !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-  }
-
-  .no-print,
-  .mantine-Modal-root {
-    display: none !important;
-  }
-
-  .verb-desktop {
-    display: table !important;
-  }
-
-  .verb-mobile {
-    display: none !important;
-  }
-}
