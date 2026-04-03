@@ -30,9 +30,11 @@ const allCategories = Object.values(vocabModules);
 // A4 at 96 dpi
 const A4_H = 1123;
 const A4_W = 794;
+const DESKTOP_BP = 800;
 
 function useA4Zoom() {
   const calc = useCallback(() => {
+    if (window.innerWidth < DESKTOP_BP) return undefined;
     const sh = (window.innerHeight * 0.9) / A4_H;
     const sw = (window.innerWidth * 0.9) / A4_W;
     return Math.min(sh, sw);
@@ -113,14 +115,23 @@ function App() {
       </Modal>
 
       {/* ── A4 paper ── */}
-      <Paper className="a4" shadow="lg" radius="md" style={{ zoom }}>
+      <Paper
+        className="a4"
+        shadow={zoom ? "lg" : undefined}
+        radius={zoom ? "md" : 0}
+        style={zoom ? { zoom } : undefined}
+      >
         <Stack
           gap={0}
           pt={17}
           pr={17}
           pl={17}
           pb={39}
-          style={{ height: "100%", boxSizing: "border-box" }}
+          style={{
+            height: zoom ? "100%" : "auto",
+            minHeight: zoom ? undefined : "100vh",
+            boxSizing: "border-box",
+          }}
         >
           <Grid
             mb={11}
